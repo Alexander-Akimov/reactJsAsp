@@ -9,13 +9,15 @@ const config = {
     devServer: {
         contentBase: PUBLIC_DIR,
         port: 9000,
+        historyApiFallback: true,
         open: true
     },
     output: {
         path: PUBLIC_DIR,
-        filename: 'bundle.js'
+        filename: 'bundle.js',
         //publicPath: PUBLIC_DIR
     },
+
     devtool: 'source-map',
     module: {
         rules: [
